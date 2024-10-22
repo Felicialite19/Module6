@@ -6,7 +6,6 @@ class Vehicle:
         self.__engine_power = int(__engine_power)
         self.__color = str(__color)
 
-
     def get_model(self):
         print(f'Модель: {self.__model}')
 
@@ -34,7 +33,7 @@ class Sedan(Vehicle):
     __PASSENGERS_LIMIT = 5
 
 # Текущие цвета __COLOR_VARIANTS = ['blue', 'red', 'green', 'black', 'white']
-vehicle1 = Sedan('Fedos', 'Toyota Mark II',  500,'blue',)
+vehicle1 = Sedan('Fedos', 'Toyota Mark II',  500, 'blue',)
 
 # Изначальные свойства
 vehicle1.print_info()
