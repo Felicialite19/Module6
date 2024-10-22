@@ -22,8 +22,8 @@ class Vehicle:
         print(f'Владелец: {self.owner}\n')
 
     def set_color(self, new_color):
-        change_colors = [colour.lower() for colour in self.__COLOR_VARIANTS] 
-        if new_color.lower() in change_colors:
+        check_colors = [color.lower() for color in self.__COLOR_VARIANTS]
+        if new_color.lower() in check_colors:
             self.__color = new_color
         else:
             print(f'Нельзя сменить цвет на: {new_color}')
